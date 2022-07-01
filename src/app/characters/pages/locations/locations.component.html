@@ -1,0 +1,34 @@
+
+  <div *ngIf="!locations; else tabla" >
+      <app-loaders>
+      </app-loaders>
+  </div>
+
+<ng-template #tabla>
+  <div class="table-container">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <td class="info">Name</td>
+          <td class="info">Type</td>
+          <td class="info">Dimension</td>
+          <td class="info">Residents</td>
+          <td class="info">Created</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let location of locations">
+
+            <td>{{location.name}}</td>
+            <td>{{location.type}}</td>
+            <td>{{location.dimension}}</td>
+            <td>{{location.residents.length}}</td>
+            <td>{{location.created}}</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+</ng-template>
+
+
+

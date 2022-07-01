@@ -1,0 +1,14 @@
+<div *ngIf="!characters; else section" >
+  <app-loaders>
+  </app-loaders>
+</div>
+
+<ng-template #section>
+  <div class="characters-container">
+    <div [routerLink]="['/character', character.id]"*ngFor="let character of characters" class="characters-item">
+      <img [src]="character.image" [alt]="character" class="character-img">
+      <h4 class="character-name" >{{character.name}}</h4>
+    </div>
+  </div>
+
+</ng-template>

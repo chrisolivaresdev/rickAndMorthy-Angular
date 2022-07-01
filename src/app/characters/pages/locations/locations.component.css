@@ -1,0 +1,32 @@
+
+.input-group{
+  display: flex;
+  justify-content: center;
+}
+
+.custom-select{
+  width: 450px;
+  color:rgb(78, 76, 76);
+  margin-right: 50px;
+  border: 1px solid rgb(100, 99, 99);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+td{
+  border: 1px solid #4D9E46;
+  font-family:  'Rufina', serif;
+  text-align: center;
+}
+
+.info{
+  font-weight: bold;
+}
+
+.table-container{
+  display: flex;
+  justify-content:center;
+  margin: 30px;
+}
+

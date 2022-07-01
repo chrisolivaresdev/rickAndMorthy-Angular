@@ -1,0 +1,80 @@
+.wrapper{
+  margin: auto;
+  width: fit-content;
+  text-align: center;
+}
+
+span {
+  position: relative;
+  color: black;
+  font-weight: 900;
+  font-size: 20.4em;
+  display: block;
+  overflow: hidden;
+}
+
+span:first-letter{
+  letter-spacing: 12vmax;
+}
+
+span:before{
+  content:'';
+  background-image: url('https://staticdelivery.nexusmods.com/mods/1151/images/528-0-1447526230.png');
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  animation: rotateIn 0.5s ease-out;
+  }
+
+  p{
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  color: #4D9E46;
+  margin-top: 0;
+  line-height: 15px;
+ }
+
+
+@keyframes rotateIn {
+  from {
+    transform: rotate( 0deg ) scale(0.2);
+    opacity: 0;
+  }
+  to {
+    transform: rotate( 360deg ) scale(1);
+    opacity: 1;
+  }
+}
+
+@media(max-width:650px){
+  .wrapper{
+    width: 450px;}
+
+    span:first-letter{
+      letter-spacing: 18vmax;
+    }
+
+    span {
+      font-size: 16em;
+    }
+}
+
+
+@media(max-width:500px){
+  .wrapper{
+    width: 350px;}
+
+    span:first-letter{
+      letter-spacing: 14vmax;
+    }
+
+    span {
+
+      font-size: 14em;
+
+    }
+}

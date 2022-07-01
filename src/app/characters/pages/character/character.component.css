@@ -1,0 +1,49 @@
+.character-container{
+  margin: 50px;
+}
+
+.character-item{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 10px 10px 50px 30px rgba(0,0,0,0.2);
+  padding: 40px;
+}
+
+.info{
+  padding:25px;
+  text-align: center;
+}
+
+.info h4{
+  margin-top:10px
+}
+
+.details p{
+  font-family:'Rufina', serif;
+}
+
+@media(max-width: 780px){
+  .character-item{
+    display: block;
+    text-align: center;
+  }
+
+  @media(max-width:550px){
+    .character-img{
+      width: 200px;
+    }
+  }
+
+  @media(max-width:450px){
+    .character-img{
+      width: 150px;
+    }
+  }
+
+  @media(max-width:400px){
+    .character-img{
+      width: 80%;
+    }
+  }
+}
