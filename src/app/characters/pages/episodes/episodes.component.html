@@ -1,3 +1,9 @@
+<div *ngIf="!episodes; else section" >
+  <app-loaders>
+  </app-loaders>
+</div>
+
+<ng-template #section>
 <div class="container">
   <div class="card-container"  *ngFor="let episode of episodes">
     <div class="card-info">
@@ -18,3 +24,4 @@
     </div>
   </div>
 </div>
+</ng-template>
