@@ -16,10 +16,11 @@ export class CharactersComponent implements OnInit {
    }
 
   ngOnInit() {
-  this.CharactersService.getCharacters()
-  .subscribe(resp =>
-  this.characters = resp.results
-  )
+
+    this.CharactersService.getCharacters()
+    .subscribe(resp =>
+    this.characters = resp.results
+    )
   }
 
 
